@@ -3,7 +3,7 @@ import datetime
 from random import choice
 from passwords import EMAIL, PASSWORD
 
-with open("quotes.txt") as quotes:
+with open("quotation_docs/complete_quotations.txt") as quotes:
     # This is a strange code format, as this keeps the file around until the day arrives. We should do the reverse.
     if (datetime.datetime.now().weekday() + 2) % 7 == 5:
         quotation = choice(quotes.readlines())
